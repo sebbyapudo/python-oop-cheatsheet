@@ -11,18 +11,23 @@
 # Creating classes
 class Dog:
     # Constructor / Dunder methods in py
-    def __init__(self, name):
+    def __init__(self, name, age):
         self.name = name
+        self.age = age
 
-    def add_number(self, x):
-        return x + 5
+    def get_name(self):
+        return self.name
 
-    def bark(self):
-        print('Woof')
+    def get_age(self):
+        return self.age
+
+    def set_age(self, age):
+        self.age = age
 
 
-d1 = Dog("Seb")
-d2 = Dog('Njenga')
+d1 = Dog("Seb", 21)
+d1.set_age(22)
+d2 = Dog('Njenga', 20)
 
-print(d1.name)
-print(d2.name)
+print(d1.get_age())
+print(d2.get_age())
