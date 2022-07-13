@@ -35,27 +35,45 @@
 
 
 # Class Methods and Class Attributes
-class Person:
-    number_of_people = 0
-    GRAVITY = -9.8
+# class Person:
+#     number_of_people = 0
+#     GRAVITY = -9.8
+#
+#     def __init__(self, name):
+#         self.name = name
+#         Person.add_person()
+#
+#     # Class Methods
+#     @classmethod
+#     def number_of_people_(cls):
+#         return cls.number_of_people
+#
+#     @classmethod
+#     def add_person(cls):
+#         cls.number_of_people += 1
+#
+#
+# p1 = Person('Seb')
+# p2 = Person('Jasto')
+# print(Person.number_of_people_())
 
-    def __init__(self, name):
-        self.name = name
-        Person.add_person()
+# Static Methods
+class Math:
 
-    # Class Methods
-    @classmethod
-    def number_of_people_(cls):
-        return cls.number_of_people
-
-    @classmethod
-    def add_person(cls):
-        cls.number_of_people += 1
+     @staticmethod
+     def add_five(x):
+         return x + 5
 
 
-p1 = Person('Seb')
-p2 = Person('Jasto')
-print(Person.number_of_people_())
+print(Math.add_five(5))
+
+
+
+
+
+
+
+
 
 
 
